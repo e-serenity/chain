@@ -9,7 +9,7 @@ Ternoa supports the transfer of arbitrary data to your descendants, friends and 
 The Ternoa node is built on [Parity Substrate](https://www.substrate.io) a framework to build robust, next generation blockchain solutions. In order to compile the node you will need to setup a few things on your machine (or use docker, see below):
 1. You need to install a few packages and libraries:
    - On mac, you will need to make sure `openssl` and `cmake` are installed, with [brew](https://brew.sh) you can do a simple `brew openssl cmake`.
-   - On linux you need to install a few more packages, for debian and derivatives use `sudo apt install cmake pkg-config libssl-dev git build-essential clang libclang-dev curl`.
+   - On linux you need to install a few more packages, for debian and derivatives use `sudo apt-get update && apt install cmake pkg-config libssl-dev git build-essential clang libclang-dev curl`.
 2. You need to install rust, the best way to do so is via [rustup](https://rustup.rs). We use a specific toolchain version which the rust tools will autodetect and fetch when needed via the [`rust-toolchain` file](./rust-toolchain).
 3. You need to configure rust to support Web Assembly compilation, we provide a script to do so, just run it via `./scripts/init.sh`.
 
